@@ -7034,3 +7034,21 @@
 2019-12-22 21:28:02 INFO  LoginManager:37 - Invalid attempt of user email: 'lol'
 2019-12-22 21:28:06 INFO  LoginManager:33 - user enter email: 1 1
 2019-12-22 21:28:06 INFO  LoginManager:37 - Invalid attempt of user email: '1'
+2019-12-23 00:46:22 INFO  LoginServlet:38 - user enter email: dimanowq@gmail.com 111111
+2019-12-23 00:47:13 INFO  LoginServlet:38 - user enter email: dimanowq@gmail.com 111111
+2019-12-23 00:51:43 INFO  LoginServlet:42 - user enter email: dimanowq@gmail.com 111111
+2019-12-23 00:52:07 INFO  LoginServlet:58 - User email dimanowq@gmail.com logged successfully.
+2019-12-23 00:54:27 INFO  LoginServlet:42 - user enter email: rwfw fwfw
+2019-12-23 00:54:27 INFO  LoginServlet:46 - Invalid attempt of user email: 'rwfw'
+2019-12-23 00:54:43 INFO  LoginServlet:42 - user enter email: dimanowq@gmail.com 111111
+2019-12-23 00:54:55 INFO  LoginServlet:58 - User email dimanowq@gmail.com logged successfully.
+2019-12-23 00:56:05 INFO  LoginServlet:42 - user enter email: dewf fewf
+2019-12-23 00:56:05 INFO  LoginServlet:46 - Invalid attempt of user email: 'dewf'
+2019-12-23 00:56:14 INFO  LoginServlet:42 - user enter email: dimanowq@gmail.com 111111
+2019-12-23 00:56:20 INFO  LoginServlet:58 - User email dimanowq@gmail.com logged successfully.
+2019-12-23 00:57:46 INFO  LoginServlet:42 - user enter email: dimanowq@gmail.com 111111
+2019-12-23 00:57:46 INFO  LoginServlet:52 - User email dimanowq@gmail.com already logged.
+2019-12-23 00:58:29 INFO  LoginServlet:42 - user enter email: dimanowq@gmail.com 111111
+2019-12-23 00:58:29 INFO  LoginServlet:52 - User email dimanowq@gmail.com already logged.
+2019-12-23 00:58:42 INFO  LoginServlet:42 - user enter email: dimanowq@gmail.com er2
+2019-12-23 00:58:42 INFO  LoginServlet:46 - Invalid attempt of user email: 'dimanowq@gmail.com'

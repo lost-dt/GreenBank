@@ -1,6 +1,7 @@
 package com.kpi.greenbank.model.dao;
 
 import com.kpi.greenbank.model.dao.implementation.JDBCDaoFactory;
+import com.kpi.greenbank.model.dao.interfase.UserDao;
 
 public abstract class DaoFactory {
 

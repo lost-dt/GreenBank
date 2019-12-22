@@ -1,4 +1,4 @@
-package com.kpi.greenbank.model.dao;
+package com.kpi.greenbank.model.dao.interfase;
 
 import java.sql.SQLException;
 import java.util.List;

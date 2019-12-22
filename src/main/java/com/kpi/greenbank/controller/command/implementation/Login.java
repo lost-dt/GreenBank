@@ -2,7 +2,7 @@ package com.kpi.greenbank.controller.command.implementation;
 
 import com.kpi.greenbank.controller.command.Command;
 import com.kpi.greenbank.controller.websession.ActiveSession;
-import com.kpi.greenbank.model.entity.User;
+import com.kpi.greenbank.model.dto.UserDTO;
 import com.kpi.greenbank.model.service.UserService;
 
 import org.apache.log4j.LogManager;
@@ -33,7 +33,7 @@ public class Login implements Command {
         if (email == null) return LOGIN_PAGE_NAME;
         logger.info("user enter email: " + email + " " + password);
 
-        Optional<User> user = userService.findUser(email, password);
+        Optional<UserDTO> user = userService.checkUserCredentials(email, password);
         if (!user.isPresent()) {
             logger.info("Invalid attempt of user email: '" + email + "'");
             request.setAttribute("userExists", "No");

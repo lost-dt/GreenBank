@@ -8,12 +8,13 @@ public class User {
     private String password;
     private String firstName;
     private String lastName;
-    private String role;
+    private UserRole role;
     private String address;
     private String city;
-    private String branch;
+    private UserBranch branch;
     private String zip;
     private String phoneNumber;
+    private Float amount;
 
     public User() {
 
@@ -24,12 +25,13 @@ public class User {
             String password,
             String firstName,
             String lastName,
-            String role,
+            UserRole role,
             String address,
             String city,
-            String branch,
+            UserBranch branch,
             String zip,
-            String phoneNumber) {
+            String phoneNumber,
+            Float amount) {
         this.email = email;
         this.password = password;
         this.firstName = firstName;
@@ -40,20 +42,7 @@ public class User {
         this.branch = branch;
         this.zip = zip;
         this.phoneNumber = phoneNumber;
-    }
-
-    protected User(Builder builder) {
-        email = builder.email;
-        password = builder.password;
-        firstName = builder.firstName;
-        lastName = builder.lastName;
-        role = builder.role;
-        address = builder.address;
-        city = builder.city;
-        branch = builder.branch;
-        zip = builder.zip;
-        phoneNumber = builder.phoneNumber;
-
+        this.amount = amount;
     }
 
     public String getEmail() {
@@ -88,11 +77,11 @@ public class User {
         this.lastName = lastName;
     }
 
-    public String getRole() {
+    public UserRole getRole() {
         return role;
     }
 
-    public void setRole(String role) {
+    public void setRole(UserRole role) {
         this.role = role;
     }
 
@@ -112,11 +101,11 @@ public class User {
         this.city = city;
     }
 
-    public String getBranch() {
+    public UserBranch getBranch() {
         return branch;
     }
 
-    public void setBranch(String branch) {
+    public void setBranch(UserBranch branch) {
         this.branch = branch;
     }
 
@@ -136,89 +125,12 @@ public class User {
         this.phoneNumber = phoneNumber;
     }
 
-    public static class Builder {
+    public Float getAmount() {
+        return amount;
+    }
 
-        private String email;
-        private String password;
-        private String firstName;
-        private String lastName;
-        private String role;
-        private String address;
-        private String city;
-        private String branch;
-        private String zip;
-        private String phoneNumber;
-
-        public Builder() {
-
-        }
-
-        public Builder setEmail(String email) {
-            this.email = email;
-
-            return this;
-        }
-
-        public Builder setPassword(String password) {
-            this.password = password;
-
-            return this;
-        }
-
-        public Builder setFirstName(String firstName) {
-            this.firstName = firstName;
-
-            return this;
-        }
-
-        public Builder setLastName(String lastName) {
-            this.lastName = lastName;
-
-            return this;
-        }
-
-        public Builder setRole(String role) {
-            this.role = role;
-
-            return this;
-        }
-
-        public Builder setAddress(String address) {
-            this.address = address;
-
-            return this;
-        }
-
-        public Builder setCity(String city) {
-            this.city = city;
-
-            return this;
-        }
-
-        public Builder setBranch(String branch) {
-            this.branch = branch;
-
-            return this;
-        }
-
-        public Builder setZip(String zip) {
-            this.zip = zip;
-
-            return this;
-        }
-
-        public Builder setPhoneNumber(String phoneNumber) {
-            this.phoneNumber = phoneNumber;
-
-            return this;
-        }
-
-
-
-        public User build() {
-            return new User(this);
-        }
-
+    public void setAmount(Float amount) {
+        this.amount = amount;
     }
 
     @Override
@@ -232,12 +144,14 @@ public class User {
         if (!Objects.equals(password, user.password)) return false;
         if (!Objects.equals(firstName, user.firstName)) return false;
         if (!Objects.equals(lastName, user.lastName)) return false;
+        if (!Objects.equals(role.getTitle(), user.role.getTitle())) return false;
         if (!Objects.equals(address, user.address)) return false;
         if (!Objects.equals(city, user.city)) return false;
-        if (!Objects.equals(branch, user.branch)) return false;
+        if (!Objects.equals(branch.getTitle(), user.branch.getTitle())) return false;
         if (!Objects.equals(zip, user.zip)) return false;
+        if (!Objects.equals(phoneNumber, user.phoneNumber)) return false;
 
-        return Objects.equals(phoneNumber, user.phoneNumber);
+        return Objects.equals(amount, user.amount);
     }
 
     @Override
@@ -246,11 +160,13 @@ public class User {
         result = 31 * result + (password != null ? password.hashCode() : 0);
         result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
         result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
+        result = 31 * result + (role.getTitle() != null ? role.hashCode() : 0);
         result = 31 * result + (address != null ? address.hashCode() : 0);
         result = 31 * result + (city != null ? city.hashCode() : 0);
-        result = 31 * result + (branch != null ? branch.hashCode() : 0);
+        result = 31 * result + (branch.getTitle() != null ? branch.hashCode() : 0);
         result = 31 * result + (zip != null ? zip.hashCode() : 0);
         result = 31 * result + (phoneNumber != null ? phoneNumber.hashCode() : 0);
+        result = 31 * result + (amount != null ? amount.hashCode() : 0);
 
         return result;
     }
@@ -262,11 +178,13 @@ public class User {
                 ", password=" + '\'' + password + '\'' +
                 ", firstName=" + '\'' + firstName + '\'' +
                 ", lastName=" + '\'' + lastName + '\'' +
+                ", role=" + '\'' + role.getTitle() + '\'' +
                 ", address=" + '\'' + address + '\'' +
                 ", city=" + '\'' + city + '\'' +
-                ", branch=" + '\'' + branch + '\'' +
+                ", branch=" + '\'' + branch.getTitle() + '\'' +
                 ", zip=" + '\'' + zip + '\'' +
                 ", phoneNumber=" + '\'' + phoneNumber + '\'' +
+                ", amount=" + '\'' + amount + '\'' +
                 ')';
     }
 }

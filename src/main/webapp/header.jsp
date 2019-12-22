@@ -1,4 +1,4 @@
-<%@page import="com.kpi.greenbank.model.entity.User"%>
+<%@page import="com.kpi.greenbank.model.dto.UserDTO"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
          pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -30,10 +30,10 @@
                     </button>
                 </div>
 
-                <%!private User user = null;%>
+                <%!private UserDTO user = null;%>
 
                 <%
-                    user = (User) session.getAttribute("currentUserEntity");
+                    user = (UserDTO) session.getAttribute("currentUserEntity");
                 %>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -43,7 +43,7 @@
                             <%
 						        if (user == null) {
                             %>
-                        <li><a href="create_account.jsp">Create new account</a></li>
+                        <li><a href="create_new_account.jsp">Create new account</a></li>
                             <%
 						}
 					%>

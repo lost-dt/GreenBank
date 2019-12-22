@@ -1,7 +1,7 @@
 package com.kpi.greenbank.model.dao.implementation;
 
 import com.kpi.greenbank.model.dao.DaoFactory;
-import com.kpi.greenbank.model.dao.UserDao;
+import com.kpi.greenbank.model.dao.interfase.UserDao;
 import com.kpi.greenbank.model.dao.connector.MySqlPoolConnector;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
