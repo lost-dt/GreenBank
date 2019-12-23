@@ -3,8 +3,6 @@ package com.kpi.greenbank.model.dto;
 import com.kpi.greenbank.model.entity.UserBranch;
 import com.kpi.greenbank.model.entity.UserRole;
 
-import java.util.Objects;
-
 public class UserDTO {
 
     private String email;

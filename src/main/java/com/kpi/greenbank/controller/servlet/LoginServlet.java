@@ -1,4 +1,4 @@
-package com.kpi.greenbank.controller;
+package com.kpi.greenbank.controller.servlet;
 
 import com.kpi.greenbank.controller.websession.ActiveSession;
 import com.kpi.greenbank.model.dto.UserDTO;
@@ -16,22 +16,27 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.Optional;
+import java.util.ResourceBundle;
 
 @WebServlet(name = "UserLogin", urlPatterns = { "/login" })
 public class LoginServlet extends HttpServlet {
 
     private static final Logger logger = LogManager.getLogger(LoginServlet.class);
 
+    private static final ResourceBundle webPages = ResourceBundle.getBundle("web-pages");
+
+    private static final String WEB_PAGE_INDEX = webPages.getString("indexPageName");
+    private static final String WEB_PAGE_LOGIN = webPages.getString("loginPageName");
+
+
     private UserService userService;
 
     public void init(ServletConfig servletConfig) {
         userService = new UserService();
 
-        servletConfig.getServletContext()
-                .setAttribute("loggedUsers", new HashSet<UserDTO>());
+        servletConfig.getServletContext().setAttribute("loggedUsers", new HashSet<UserDTO>());
 
     }
-
         public void doPost(HttpServletRequest request,
                       HttpServletResponse response)
             throws IOException, ServletException {
@@ -39,28 +44,28 @@ public class LoginServlet extends HttpServlet {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
 
-        logger.info("user enter email: " + email + " " + password);
-
         Optional<UserDTO> user = userService.checkUserCredentials(email, password);
         if (email == null || !user.isPresent()) {
-            logger.info("Invalid attempt of user email: '" + email + "'");
+
+            logger.info(String.format("User %s try to login with wrong credentials", email));
             request.setAttribute("userExists", "No");
-            RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
+            RequestDispatcher rd = request.getRequestDispatcher(WEB_PAGE_LOGIN);
             rd.forward(request, response);
-        }
-        else if (ActiveSession.checkUserIsLogged(request, user.get())) {
-            logger.info("User email " + email + " already logged.");
+
+        } else if (ActiveSession.checkUserIsLogged(request, user.get())) {
+
+            logger.info(String.format("User %s already logged", email));
             request.setAttribute("userAlreadyLogin", "yes");
-            RequestDispatcher rd = request.getRequestDispatcher("login.jsp");
+            RequestDispatcher rd = request.getRequestDispatcher(WEB_PAGE_LOGIN);
             rd.forward(request, response);
         }
         else {
-            logger.info("User email " + email + " logged successfully.");
 
+            logger.info(String.format("User %s login successfully", email));
             request.getSession().setAttribute("currentUserEntity", user.get());
-
-            RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
+            RequestDispatcher rd = request.getRequestDispatcher(WEB_PAGE_INDEX);
             rd.forward(request, response);
+
         }
     }
 }

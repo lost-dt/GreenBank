@@ -30,10 +30,8 @@
                     </button>
                 </div>
 
-                <%!private UserDTO user = null;%>
-
                 <%
-                    user = (UserDTO) session.getAttribute("currentUserEntity");
+                    UserDTO user = (UserDTO) session.getAttribute("currentUserEntity");
                 %>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -53,7 +51,6 @@
                         <li><a href="close_account.jsp">Close A/C</a></li>
 
                         <!-- If user is logged in this menu will be shown -->
-
 
                             <%
 					if (user != null) {

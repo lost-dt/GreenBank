@@ -1,7 +1,6 @@
 package com.kpi.greenbank.controller.websession;
 
 import com.kpi.greenbank.model.dto.UserDTO;
-import com.kpi.greenbank.model.entity.User;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashSet;
@@ -19,9 +18,9 @@ public class ActiveSession {
     }
 
     public static void deleteUserFromActiveSession(HttpServletRequest request) {
-        User user = (User) request.getSession().getServletContext().getAttribute("userEntity");
+        UserDTO user = (UserDTO) request.getSession().getAttribute("currentUserEntity");
         @SuppressWarnings("unchecked")
-        HashSet<User> loggedUsers = (HashSet<User>) request.getSession()
+        HashSet<UserDTO> loggedUsers = (HashSet<UserDTO>) request.getSession()
                 .getServletContext().getAttribute("loggedUsers");
         loggedUsers.remove(user);
         request.getSession().getServletContext().setAttribute("loggedUsers", loggedUsers);
