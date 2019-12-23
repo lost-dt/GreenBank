@@ -40,6 +40,28 @@ public class UserService {
 
     public Optional<UserDTO> findUserByEmail(String email) {
         return Optional.ofNullable((userDao.findByEmail(email)));
+    }
+
+    public void updateUser(UserDTO userDTO) {
+
+        User user = new User();
+        user.setFirstName(userDTO.getFirstName());
+        user.setLastName(userDTO.getLastName());
+        user.setAddress(userDTO.getAddress());
+        user.setCity(userDTO.getCity());
+        user.setBranch(userDTO.getBranch());
+        user.setZip(userDTO.getZip());
+        user.setEmail(userDTO.getEmail());
+        user.setPassword(userDTO.getPassword());
+        user.setPhoneNumber(userDTO.getPhoneNumber());
+        user.setRole(userDTO.getRole());
+        user.setAmount(userDTO.getAmount());
+
+        try {
+            userDao.update(user);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
     }
 }

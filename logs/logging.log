@@ -7052,3 +7052,27 @@
 2019-12-23 00:58:29 INFO  LoginServlet:52 - User email dimanowq@gmail.com already logged.
 2019-12-23 00:58:42 INFO  LoginServlet:42 - user enter email: dimanowq@gmail.com er2
 2019-12-23 00:58:42 INFO  LoginServlet:46 - Invalid attempt of user email: 'dimanowq@gmail.com'
+2019-12-23 16:43:50 INFO  LoginServlet:50 - User fewqf try to login with wrong credentials
+2019-12-23 16:44:33 INFO  LoginServlet:50 - User lol try to login with wrong credentials
+2019-12-23 16:45:16 INFO  LoginServlet:50 - User lol try to login with wrong credentials
+2019-12-23 16:51:20 INFO  LoginServlet:49 - User lol try to login with wrong credentials
+2019-12-23 16:52:23 INFO  LoginServlet:49 - User lol try to login with wrong credentials
+2019-12-23 16:52:31 INFO  LoginServlet:63 - User test@test.test login successfully
+2019-12-23 16:52:45 INFO  LoginServlet:63 - User test@test.test login successfully
+2019-12-23 16:53:10 INFO  CreateAccountServlet:41 - Start to create new user: 1 1
+2019-12-23 16:53:12 INFO  CreateAccountServlet:64 - Passwords for 1 1 are not same (fw and wfqwqef)
+2019-12-23 17:41:02 INFO  LoginServlet:63 - User test@test.test login successfully
+2019-12-23 17:57:36 INFO  LoginServlet:64 - User test@test.test login successfully
+2019-12-23 17:59:09 INFO  LoginServlet:64 - User test@test.test login successfully
+2019-12-23 18:00:04 INFO  LoginServlet:64 - User test@test.test login successfully
+2019-12-23 18:00:21 INFO  ChangePasswordServlet:45 - User test@test.test try to change password using wrong old one
+2019-12-23 18:04:00 INFO  LoginServlet:64 - User test@test.test login successfully
+2019-12-23 18:04:15 INFO  ChangePasswordServlet:45 - User test@test.test try to change password using wrong old one
+2019-12-23 18:04:23 INFO  ChangePasswordServlet:50 - Passwords for test@test.test are not same (423 and f2f)
+2019-12-23 18:05:01 INFO  ChangePasswordServlet:50 - Passwords for test@test.test are not same (vew and vewr)
+2019-12-23 18:05:46 INFO  ChangePasswordServlet:50 - Passwords for test@test.test are not same (vew and vewr)
+2019-12-23 18:16:23 INFO  LoginServlet:64 - User test@test.test login successfully
+2019-12-23 18:16:31 INFO  ChangePasswordServlet:50 - Passwords for test@test.test are not same (feqw and fewq)
+2019-12-23 18:16:51 INFO  ChangePasswordServlet:45 - User test@test.test try to change password using wrong old one
+2019-12-23 18:17:11 INFO  ChangePasswordServlet:50 - Passwords for test@test.test are not same (t and e21)
+2019-12-23 18:19:39 INFO  ChangePasswordServlet:45 - User test@test.test try to change password using wrong old one

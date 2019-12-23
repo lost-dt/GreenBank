@@ -32,6 +32,12 @@ public class JDBSUserDao implements UserDao {
             DATABASE_NAME,
             TABLE_NAME
     );
+    private static final String QUERY_UPDATE = String.format(
+            "UPDATE %s.%s SET PASSWORD=?, FIRST_NAME=?, LAST_NAME=?, ROLE=?, ADDRESS=?, CITY=?, BRANCH=?, ZIP=?, PHONE_NUMBER=?, AMOUNT=? " +
+                    "WHERE EMAIL=?",
+            DATABASE_NAME,
+            TABLE_NAME
+    );
 
     private Connection connection;
 
@@ -101,6 +107,21 @@ public class JDBSUserDao implements UserDao {
     @Override
     public void update(User entity) throws SQLException {
 
+        PreparedStatement preparedStatement = connection.prepareStatement(QUERY_UPDATE);
+
+        preparedStatement.setString(1, entity.getPassword());
+        preparedStatement.setString(2, entity.getFirstName());
+        preparedStatement.setString(3, entity.getLastName());
+        preparedStatement.setString(4, entity.getRole().getTitle());
+        preparedStatement.setString(5, entity.getAddress());
+        preparedStatement.setString(6, entity.getCity());
+        preparedStatement.setString(7, entity.getBranch().getTitle());
+        preparedStatement.setString(8, entity.getZip());
+        preparedStatement.setString(9, entity.getPhoneNumber());
+        preparedStatement.setFloat(10, entity.getAmount());
+        preparedStatement.setString(11, entity.getEmail());
+
+        preparedStatement.executeUpdate();
     }
 
     @Override

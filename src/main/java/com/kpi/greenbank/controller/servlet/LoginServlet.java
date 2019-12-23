@@ -36,8 +36,9 @@ public class LoginServlet extends HttpServlet {
         servletConfig.getServletContext().setAttribute("loggedUsers", new HashSet<UserDTO>());
 
     }
-        public void doPost(HttpServletRequest request,
-                      HttpServletResponse response)
+
+    public void doPost(HttpServletRequest request,
+                       HttpServletResponse response)
             throws IOException, ServletException {
 
         String email = request.getParameter("email");
