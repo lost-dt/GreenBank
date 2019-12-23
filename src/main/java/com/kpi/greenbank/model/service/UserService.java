@@ -9,11 +9,10 @@ import java.sql.SQLException;
 import java.util.Optional;
 
 public class UserService {
-    private DaoFactory daoFactory ;
-    private UserDao userDao ;
+    private UserDao userDao;
 
     public UserService() {
-        this.daoFactory = DaoFactory.getInstance();
+        DaoFactory daoFactory = DaoFactory.getInstance();
         this.userDao = daoFactory.createUserDao();
     }
 

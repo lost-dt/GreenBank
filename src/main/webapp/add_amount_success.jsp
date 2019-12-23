@@ -1,11 +1,11 @@
-<%@page import="com.kpi.greenbank.model.entity.User"%>
+<%@ page import="com.kpi.greenbank.model.dto.UserDTO" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Amount</title>
 <link rel="shortcut icon" type="image/png" href="image/favicon.png" />
 <link rel="stylesheet" type="text/css" href="css/deposit.css">
 <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -18,10 +18,8 @@
 	<div class="row">
 		<jsp:include page="header.jsp" />
 	</div>
-
-
 	<%
-		User user = (User) request.getAttribute("createdUser");
+		UserDTO user = (UserDTO) session.getAttribute("currentUserEntity");
 	%>
 
 	<div class="container-fullwidth">
@@ -29,7 +27,7 @@
 			<div class="alert alert-success col-md-4 col-md-offset-4" role="alert">
 				<h4 class="alert-heading">Success!</h4>
 				<p>
-					<strong>Your Account has been created.</strong>
+					<strong>Your Amount has been created. Now wait when manager receive it.</strong>
 				</p>
 				<p class="mb-0">
 					<b>Email Address: </b>
@@ -42,6 +40,7 @@
 			</div>
 		</div>
 
+		<!-- Footer start here -->
 		<div class="row" style="margin-top: 50px;">
 			<jsp:include page="footer.jsp"/>
 		</div>

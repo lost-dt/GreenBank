@@ -45,8 +45,8 @@
                             <%
 						}
 					%>
-                        <li><a href="deposit.jsp">Deposit</a></li>
-                        <li><a href="withdraw.jsp">Withdraw</a></li>
+                        <li><a href="add_amount.jsp">Add Amount</a></li>
+                        <li><a href="amount_history.jsp">Amount History</a></li>
                         <li><a href="transfer.jsp">Transfer</a></li>
                         <li><a href="close_account.jsp">Close A/C</a></li>
 

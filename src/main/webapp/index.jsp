@@ -54,13 +54,13 @@
     <div class="schemes" style="margin-bottom: -155px;">
       <div class="col-md-4 scheme-type-1">
         <h2 class="text-center text-medium">
-          Loan<br>Scheme
+          Amount<br>Scheme
         </h2>
         <p class="col-md-6 col-md-offset-3 text-center scheme-text">There
           is a variety of saving plans which can be tailored to your needs,
           including: Tax Exempt Savings Regular Savings.</p>
         <div class="scheme-button col-md-4 col-md-offset-4">
-          <a type="button" class="btn btn-default btn-lg" href="loan.jsp"
+          <a type="button" class="btn btn-default btn-lg" href="add_amount.jsp"
              style="border-radius: 24px;">Learn more..</a>
         </div>
       </div>

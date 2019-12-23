@@ -7076,3 +7076,13 @@
 2019-12-23 18:16:51 INFO  ChangePasswordServlet:45 - User test@test.test try to change password using wrong old one
 2019-12-23 18:17:11 INFO  ChangePasswordServlet:50 - Passwords for test@test.test are not same (t and e21)
 2019-12-23 18:19:39 INFO  ChangePasswordServlet:45 - User test@test.test try to change password using wrong old one
+2019-12-23 18:29:29 INFO  LoginServlet:64 - User test@test.test login successfully
+2019-12-23 21:39:48 INFO  LoginServlet:50 - User test@test.test try to login with wrong credentials
+2019-12-23 21:39:56 INFO  LoginServlet:64 - User test@test.test login successfully
+2019-12-23 21:42:02 INFO  LoginServlet:64 - User test@test.test login successfully
+2019-12-23 21:43:24 INFO  LoginServlet:64 - User test@test.test login successfully
+2019-12-23 21:44:39 INFO  LoginServlet:64 - User test@test.test login successfully
+2019-12-23 21:45:51 INFO  LoginServlet:64 - User test@test.test login successfully
+2019-12-23 22:30:35 INFO  LoginServlet:64 - User test@test.test login successfully
+2019-12-23 22:39:22 INFO  LoginServlet:64 - User test@test.test login successfully
+2019-12-23 22:41:24 INFO  LoginServlet:57 - User test@test.test already logged
