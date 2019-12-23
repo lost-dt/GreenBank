@@ -23,10 +23,9 @@ public class LoginServlet extends HttpServlet {
 
     private static final Logger logger = LogManager.getLogger(LoginServlet.class);
 
-    private static final ResourceBundle webPages = ResourceBundle.getBundle("web-pages");
 
-    private static final String WEB_PAGE_INDEX = webPages.getString("indexPageName");
-    private static final String WEB_PAGE_LOGIN = webPages.getString("loginPageName");
+    private static final String WEB_PAGE_INDEX = "index.jsp";
+    private static final String WEB_PAGE_LOGIN = "login.jsp";
 
 
     private UserService userService;

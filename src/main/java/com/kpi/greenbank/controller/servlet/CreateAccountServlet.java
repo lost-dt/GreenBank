@@ -22,10 +22,9 @@ public class CreateAccountServlet extends HttpServlet {
 
     private static final Logger logger = LogManager.getLogger(CreateAccountServlet.class);
 
-    private static final ResourceBundle webPages = ResourceBundle.getBundle("web-pages");
 
-    private static final String WEB_PAGE_CREATE_ACCOUNT = webPages.getString("createAccountPageName");
-    private static final String WEB_PAGE_CREATE_ACCOUNT_SUCCESS = webPages.getString("createAccountSuccessPageName");
+    private static final String WEB_PAGE_CREATE_ACCOUNT = "create_new_account.jsp";
+    private static final String WEB_PAGE_CREATE_ACCOUNT_SUCCESS = "create_new_account_success.jsp";
 
 
     private UserService userService;
