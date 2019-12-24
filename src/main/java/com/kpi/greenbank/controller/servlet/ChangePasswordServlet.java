@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Base64;
 
 @WebServlet(name = "CreateAccount", urlPatterns = { "/change_pass" })
 public class ChangePasswordServlet extends HttpServlet {
@@ -38,6 +39,7 @@ public class ChangePasswordServlet extends HttpServlet {
 
 
         String oldPassword = request.getParameter("oldPassword");
+        oldPassword = Base64.getEncoder().encodeToString(oldPassword.getBytes());
         String newPassword = request.getParameter("newPassword");
         String reNewPassword = request.getParameter("newRePassword");
 
@@ -56,6 +58,7 @@ public class ChangePasswordServlet extends HttpServlet {
             rd.forward(request, response);
         }
         else {
+            newPassword = Base64.getEncoder().encodeToString(newPassword.getBytes());
             userDTO.setPassword(newPassword);
             userService.updateUser(userDTO);
             RequestDispatcher rd = request.getRequestDispatcher(WEB_PAGE_INDEX);

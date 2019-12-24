@@ -5,6 +5,7 @@ com/kpi/greenbank/model/dao/connector/MySqlPoolConnector.class
 com/kpi/greenbank/model/entity/AmountTransaction.class
 com/kpi/greenbank/controller/servlet/ChangePasswordServlet.class
 com/kpi/greenbank/controller/servlet/AmountTransactionServlet.class
+com/kpi/greenbank/controller/servlet/AmountRequestServlet.class
 com/kpi/greenbank/model/dto/UserDTO$Builder.class
 com/kpi/greenbank/controller/websession/ActiveSession.class
 com/kpi/greenbank/model/util/date/DateParser.class

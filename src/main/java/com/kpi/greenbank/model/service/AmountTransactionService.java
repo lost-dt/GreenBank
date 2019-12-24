@@ -33,4 +33,17 @@ public class AmountTransactionService {
         return amountTransactionDao.loadAllByUserEmail(userEmail);
     }
 
+    public List<AmountTransactionDTO> loadAllWaitAmountTransactions() {
+        return amountTransactionDao.loadAllWaitTransactions();
+    }
+
+    public void updateAmountTransaction(AmountTransaction amountTransaction) {
+        try {
+            amountTransactionDao.update(amountTransaction);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+
 }

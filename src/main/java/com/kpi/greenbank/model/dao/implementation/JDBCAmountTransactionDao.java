@@ -31,6 +31,12 @@ public class JDBCAmountTransactionDao implements AmountTransactionDao {
             DATABASE_NAME,
             TABLE_NAME
     );
+    private static final String QUERY_UPDATE = String.format(
+            "UPDATE %s.%s SET USER_EMAIL=?, AMOUNT_VALUE=?, STATUS=?, CREATION_TIME=?, HANDLED_BY=?, HANDLED_TIME=? " +
+                    "WHERE ID=?",
+            DATABASE_NAME,
+            TABLE_NAME
+    );
 
     private Connection connection;
 
@@ -93,6 +99,14 @@ public class JDBCAmountTransactionDao implements AmountTransactionDao {
     }
 
     @Override
+    public List<AmountTransactionDTO> loadAllWaitTransactions() {
+
+        List<AmountTransactionDTO> amountTransactionDTOS = loadAll();
+
+        return amountTransactionDTOS.stream().filter(item -> item.getStatus().equals(TransactionStatus.WAIT)).collect(Collectors.toList());
+    }
+
+    @Override
     public AmountTransaction findById(String id) throws SQLException {
         return null;
     }
@@ -100,6 +114,17 @@ public class JDBCAmountTransactionDao implements AmountTransactionDao {
     @Override
     public void update(AmountTransaction entity) throws SQLException {
 
+        PreparedStatement preparedStatement = connection.prepareStatement(QUERY_UPDATE);
+
+        preparedStatement.setString(1, entity.getUserEmail());
+        preparedStatement.setFloat(2, entity.getAmountValue());
+        preparedStatement.setString(3, entity.getStatus().getTitle());
+        preparedStatement.setString(4, DateFormator.formatByDefaultFormator(entity.getCreationTime()));
+        preparedStatement.setString(5, entity.getHandledBy());
+        preparedStatement.setString(6, DateFormator.formatByDefaultFormator(entity.getHandledTime()));
+        preparedStatement.setInt(7, entity.getId());
+
+        preparedStatement.executeUpdate();
     }
 
     @Override

@@ -7086,3 +7086,30 @@
 2019-12-23 22:30:35 INFO  LoginServlet:64 - User test@test.test login successfully
 2019-12-23 22:39:22 INFO  LoginServlet:64 - User test@test.test login successfully
 2019-12-23 22:41:24 INFO  LoginServlet:57 - User test@test.test already logged
+2019-12-24 03:48:37 INFO  LoginServlet:52 - User lol try to login with wrong credentials
+2019-12-24 03:53:29 INFO  CreateAccountServlet:41 - Start to create new user: admindima admindima
+2019-12-24 03:53:51 INFO  CreateAccountServlet:95 - New user add to GreenBank system
+2019-12-24 03:54:29 INFO  LoginServlet:65 - User ad@ad.ad login successfully
+2019-12-24 03:56:16 INFO  LoginServlet:65 - User ad@ad.ad login successfully
+2019-12-24 03:57:28 INFO  LoginServlet:51 - User ad@ad.ad try to login with wrong credentials
+2019-12-24 03:57:39 INFO  LoginServlet:51 - User ad@ad.ad try to login with wrong credentials
+2019-12-24 03:58:45 INFO  CreateAccountServlet:41 - Start to create new user: Dima Tsylyuryk
+2019-12-24 03:58:48 INFO  CreateAccountServlet:95 - New user add to GreenBank system
+2019-12-24 03:59:12 INFO  LoginServlet:65 - User dimanowq@gmail.com login successfully
+2019-12-24 03:59:26 INFO  ChangePasswordServlet:52 - Passwords for dimanowq@gmail.com are not same (admin1 and admin2)
+2019-12-24 03:59:37 INFO  ChangePasswordServlet:47 - User dimanowq@gmail.com try to change password using wrong old one
+2019-12-24 04:13:56 INFO  LoginServlet:65 - User dimanowq@gmail.com login successfully
+2019-12-24 04:14:39 INFO  LoginServlet:65 - User dimanowq@gmail.com login successfully
+2019-12-24 04:33:20 INFO  LoginServlet:65 - User dimanowq@gmail.com login successfully
+2019-12-24 04:50:45 INFO  LoginServlet:65 - User dimanowq@gmail.com login successfully
+2019-12-24 04:53:21 INFO  LoginServlet:65 - User dimanowq@gmail.com login successfully
+2019-12-24 04:55:46 INFO  LoginServlet:65 - User dimanowq@gmail.com login successfully
+2019-12-24 04:58:15 INFO  LoginServlet:58 - User dimanowq@gmail.com already logged
+2019-12-24 04:59:01 INFO  CreateAccountServlet:41 - Start to create new user: Ivan Gorohov
+2019-12-24 04:59:06 INFO  CreateAccountServlet:95 - New user add to GreenBank system
+2019-12-24 04:59:23 INFO  LoginServlet:65 - User ivan@gmail.com login successfully
+2019-12-24 05:01:17 INFO  LoginServlet:65 - User dimanowq@gmail.com login successfully
+2019-12-24 05:01:43 INFO  LoginServlet:65 - User ivan@gmail.com login successfully
+2019-12-24 05:04:00 INFO  LoginServlet:51 - User dimanowq@gmail.com try to login with wrong credentials
+2019-12-24 05:04:08 INFO  LoginServlet:58 - User dimanowq@gmail.com already logged
+2019-12-24 05:04:46 INFO  LoginServlet:65 - User dimanowq@gmail.com login successfully

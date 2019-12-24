@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.ResourceBundle;
+import java.util.Base64;
 
 @WebServlet(name = "CreateAccount", urlPatterns = { "/create" })
 public class CreateAccountServlet extends HttpServlet {
@@ -35,7 +35,7 @@ public class CreateAccountServlet extends HttpServlet {
 
     }
 
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+    public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
         logger.info(String.format(
@@ -85,7 +85,7 @@ public class CreateAccountServlet extends HttpServlet {
             user.setBranch(branch);
             user.setZip(zip);
             user.setEmail(email);
-            user.setPassword(password);
+            user.setPassword(Base64.getEncoder().encodeToString(password.getBytes()));
             user.setPhoneNumber(phoneNumber);
             user.setRole(role);
             user.setAmount(amount);

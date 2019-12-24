@@ -38,7 +38,6 @@
 						UserDTO userDTO = (UserDTO) request.getSession().getAttribute("currentUserEntity");
 						List<AmountTransactionDTO> amountTransactionDTOS =
 								new AmountTransactionService().loadAllAmountTransactionsByUserEmail(userDTO.getEmail());
-						System.err.println(amountTransactionDTOS);
 					%>
 
 

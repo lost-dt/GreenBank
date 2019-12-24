@@ -2,7 +2,7 @@ package com.kpi.greenbank.model.entity;
 
 public enum TransactionStatus {
     WAIT("wait"),
-    ASSEPT("assept"),
+    ACCEPT("accept"),
     CLOSE("close");
 
     private String title;

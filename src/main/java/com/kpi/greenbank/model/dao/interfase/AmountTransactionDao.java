@@ -8,4 +8,5 @@ import java.util.List;
 public interface AmountTransactionDao extends GeneralDao<AmountTransaction> {
     List<AmountTransactionDTO> loadAll();
     List<AmountTransactionDTO> loadAllByUserEmail(String userEmail);
+    List<AmountTransactionDTO> loadAllWaitTransactions();
 }

@@ -14,9 +14,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Base64;
 import java.util.HashSet;
 import java.util.Optional;
-import java.util.ResourceBundle;
 
 @WebServlet(name = "UserLogin", urlPatterns = { "/login" })
 public class LoginServlet extends HttpServlet {
@@ -43,6 +43,7 @@ public class LoginServlet extends HttpServlet {
 
         String email = request.getParameter("email");
         String password = request.getParameter("password");
+        password = Base64.getEncoder().encodeToString(password.getBytes());
 
         Optional<UserDTO> user = userService.checkUserCredentials(email, password);
         if (email == null || !user.isPresent()) {

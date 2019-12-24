@@ -1,4 +1,5 @@
 <%@page import="com.kpi.greenbank.model.dto.UserDTO"%>
+<%@ page import="com.kpi.greenbank.model.entity.UserRole" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
          pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -86,18 +87,16 @@
                                     </li>
                                     <li class="divider navbar-login-session-bg"></li>
                                     <%
-                                        if (user.getEmail().equals("admin")) {
+                                        if (user.getRole().equals(UserRole.MANAGER)) {
                                     %>
-                                    <li><a href="loan_request.jsp">Loan request<span
+                                    <li><a href="amounts_requests.jsp">Amount requests<span
                                             class="glyphicon glyphicon-list-alt pull-right"></span></a></li>
                                     <%
-                                    } else {
+                                    }
                                     %>
                                     <li><a href="change_password.jsp">Change Password<span
                                             class="glyphicon glyphicon-cog pull-right"></span></a></li>
-                                    <%
-                                        }
-                                    %>
+
                                     <li class="divider"></li>
                                     <li><a href="logout.jsp">Sign Out<span
                                             class="glyphicon glyphicon-log-out pull-right"></span></a></li>
