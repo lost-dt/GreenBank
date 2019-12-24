@@ -48,7 +48,7 @@
 					%>
                         <li><a href="add_amount.jsp">Add Amount</a></li>
                         <li><a href="amount_history.jsp">Amount History</a></li>
-                        <li><a href="">Deposit</a></li>
+                        <li><a href="deposit_scheme.jsp">Deposit</a></li>
                         <li><a href="delete_account.jsp">Close A/C</a></li>
 
                         <!-- If user is logged in this menu will be shown -->
