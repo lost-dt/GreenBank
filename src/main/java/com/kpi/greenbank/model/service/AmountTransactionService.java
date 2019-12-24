@@ -45,5 +45,13 @@ public class AmountTransactionService {
         }
     }
 
+    public void deleteByUserEmail(String userEmail) {
+        try {
+            amountTransactionDao.deleteByUserEmail(userEmail);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 }

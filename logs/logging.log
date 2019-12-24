@@ -277,3 +277,62 @@
 2019-12-24 05:34:52 INFO  LoggingFilter:29 - Session[C6AD54B02047518270A2E05C19DCB923] trying to accept page [/index.jsp]. Allowed.
 2019-12-24 05:34:58 INFO  LoggingFilter:29 - Session[C6AD54B02047518270A2E05C19DCB923] trying to accept page [/logout.jsp]. Allowed.
 2019-12-24 05:34:58 INFO  LoggingFilter:29 - Session[03DA0211E72F6EC155A5C794AD718F0F] trying to accept page [/index.jsp]. Allowed.
+2019-12-24 05:36:01 INFO  LoggingFilter:29 - Session[118B254C49CA56B25E5C308E309C24CF] trying to accept page [/index.jsp]. Allowed.
+2019-12-24 05:36:06 INFO  LoggingFilter:29 - Session[118B254C49CA56B25E5C308E309C24CF] trying to accept page [/index.jsp]. Allowed.
+2019-12-24 05:36:06 INFO  LoggingFilter:29 - Session[118B254C49CA56B25E5C308E309C24CF] trying to accept page [/index.jsp]. Allowed.
+2019-12-24 05:36:08 INFO  LoggingFilter:29 - Session[118B254C49CA56B25E5C308E309C24CF] trying to accept page [/amount_history.jsp]. Allowed.
+2019-12-24 05:36:10 INFO  LoggingFilter:29 - Session[118B254C49CA56B25E5C308E309C24CF] trying to accept page [/index.jsp]. Allowed.
+2019-12-24 05:36:12 INFO  LoggingFilter:29 - Session[118B254C49CA56B25E5C308E309C24CF] trying to accept page [/deposit_scheme.jsp]. Allowed.
+2019-12-24 05:36:16 INFO  LoggingFilter:29 - Session[118B254C49CA56B25E5C308E309C24CF] trying to accept page [/index.jsp]. Allowed.
+2019-12-24 05:36:22 INFO  LoggingFilter:29 - Session[118B254C49CA56B25E5C308E309C24CF] trying to accept page [/login.jsp]. Allowed.
+2019-12-24 05:36:29 INFO  LoggingFilter:29 - Session[118B254C49CA56B25E5C308E309C24CF] trying to accept page [/login]. Allowed.
+2019-12-24 05:36:29 INFO  LoginServlet:65 - User ok@ok.ok login successfully
+2019-12-24 05:36:35 INFO  LoggingFilter:29 - Session[118B254C49CA56B25E5C308E309C24CF] trying to accept page [/logout.jsp]. Allowed.
+2019-12-24 05:36:35 INFO  LoggingFilter:29 - Session[73C01014F5FFF061DE879A36EEE5C34C] trying to accept page [/index.jsp]. Allowed.
+2019-12-24 05:36:36 INFO  LoggingFilter:29 - Session[73C01014F5FFF061DE879A36EEE5C34C] trying to accept page [/login.jsp]. Allowed.
+2019-12-24 05:36:44 INFO  LoggingFilter:29 - Session[73C01014F5FFF061DE879A36EEE5C34C] trying to accept page [/login]. Allowed.
+2019-12-24 05:36:44 INFO  LoginServlet:65 - User dimanowq@gmail.com login successfully
+2019-12-24 05:37:54 INFO  LoggingFilter:29 - Session[73C01014F5FFF061DE879A36EEE5C34C] trying to accept page [/index.jsp]. Allowed.
+2019-12-24 05:38:07 INFO  LoggingFilter:29 - Session[73C01014F5FFF061DE879A36EEE5C34C] trying to accept page [/index.jsp]. Allowed.
+2019-12-24 05:38:24 INFO  LoggingFilter:29 - Session[73C01014F5FFF061DE879A36EEE5C34C] trying to accept page [/logout.jsp]. Allowed.
+2019-12-24 05:38:24 INFO  LoggingFilter:29 - Session[ADAEB3F19DFD81681DAD2C40A67200FF] trying to accept page [/index.jsp]. Allowed.
+2019-12-24 05:55:45 INFO  LoggingFilter:29 - Session[224987A6CD5A5AD758904D99FD1A9504] trying to accept page [/index.jsp]. Allowed.
+2019-12-24 05:55:49 INFO  LoggingFilter:29 - Session[224987A6CD5A5AD758904D99FD1A9504] trying to accept page [/index.jsp]. Allowed.
+2019-12-24 05:55:50 INFO  LoggingFilter:29 - Session[224987A6CD5A5AD758904D99FD1A9504] trying to accept page [/index.jsp]. Allowed.
+2019-12-24 05:55:50 INFO  LoggingFilter:29 - Session[224987A6CD5A5AD758904D99FD1A9504] trying to accept page [/amount_history.jsp]. Allowed.
+2019-12-24 05:55:51 INFO  LoggingFilter:29 - Session[224987A6CD5A5AD758904D99FD1A9504] trying to accept page [/add_amount.jsp]. Allowed.
+2019-12-24 05:55:51 INFO  LoggingFilter:29 - Session[224987A6CD5A5AD758904D99FD1A9504] trying to accept page [/create_new_account.jsp]. Allowed.
+2019-12-24 05:55:52 INFO  LoggingFilter:29 - Session[224987A6CD5A5AD758904D99FD1A9504] trying to accept page [/index.jsp]. Allowed.
+2019-12-24 05:55:53 INFO  LoggingFilter:29 - Session[224987A6CD5A5AD758904D99FD1A9504] trying to accept page [/index.jsp]. Allowed.
+2019-12-24 06:06:21 INFO  LoggingFilter:29 - Session[D4771EC9612F2CA9C4DDA4817B210A9E] trying to accept page [/index.jsp]. Allowed.
+2019-12-24 06:06:26 INFO  LoggingFilter:29 - Session[D4771EC9612F2CA9C4DDA4817B210A9E] trying to accept page [/delete_account.jsp]. Allowed.
+2019-12-24 06:06:28 INFO  LoggingFilter:29 - Session[D4771EC9612F2CA9C4DDA4817B210A9E] trying to accept page [/login.jsp]. Allowed.
+2019-12-24 06:06:33 INFO  LoggingFilter:29 - Session[D4771EC9612F2CA9C4DDA4817B210A9E] trying to accept page [/login]. Allowed.
+2019-12-24 06:06:33 INFO  LoginServlet:65 - User ok@ok.ok login successfully
+2019-12-24 06:06:35 INFO  LoggingFilter:29 - Session[D4771EC9612F2CA9C4DDA4817B210A9E] trying to accept page [/delete_account.jsp]. Allowed.
+2019-12-24 06:23:20 INFO  LoggingFilter:29 - Session[D4771EC9612F2CA9C4DDA4817B210A9E] trying to accept page [/delete_account.jsp]. Allowed.
+2019-12-24 06:23:20 INFO  LoggingFilter:29 - Session[D4771EC9612F2CA9C4DDA4817B210A9E] trying to accept page [/css/deposit.css]. Allowed.
+2019-12-24 06:23:20 INFO  LoggingFilter:29 - Session[D4771EC9612F2CA9C4DDA4817B210A9E] trying to accept page [/css/header_css.css]. Allowed.
+2019-12-24 06:23:20 INFO  LoggingFilter:29 - Session[D4771EC9612F2CA9C4DDA4817B210A9E] trying to accept page [/bootstrap/js/bootstrap.min.js]. Allowed.
+2019-12-24 06:23:20 INFO  LoggingFilter:29 - Session[D4771EC9612F2CA9C4DDA4817B210A9E] trying to accept page [/image/GreenBank.png]. Allowed.
+2019-12-24 06:23:20 INFO  LoggingFilter:29 - Session[D4771EC9612F2CA9C4DDA4817B210A9E] trying to accept page [/bootstrap/css/bootstrap.min.css]. Allowed.
+2019-12-24 06:23:20 INFO  LoggingFilter:29 - Session[D4771EC9612F2CA9C4DDA4817B210A9E] trying to accept page [/css/footer.css]. Allowed.
+2019-12-24 06:23:20 INFO  LoggingFilter:29 - Session[D4771EC9612F2CA9C4DDA4817B210A9E] trying to accept page [/bootstrap/fonts/glyphicons-halflings-regular.woff2]. Allowed.
+2019-12-24 06:24:12 INFO  LoggingFilter:29 - Session[66F69066E420315DEC7415F32CD4B581] trying to accept page [/image/CurrentDepositWide.jpg]. Allowed.
+2019-12-24 06:24:12 INFO  LoggingFilter:29 - Session[02016CBC8ED22C406461CDAA7BDAA627] trying to accept page [/index.jsp]. Allowed.
+2019-12-24 06:24:12 INFO  LoggingFilter:29 - Session[CBBCAA705A0BC5F87E0BEF6481BC6ED6] trying to accept page [/image/SavingsDepositWide.jpg]. Allowed.
+2019-12-24 06:24:12 INFO  LoggingFilter:29 - Session[3BD39C4B5AC27B387C44606001B13EB8] trying to accept page [/css/main_css.css]. Allowed.
+2019-12-24 06:24:13 INFO  LoggingFilter:29 - Session[02016CBC8ED22C406461CDAA7BDAA627] trying to accept page [/login.jsp]. Allowed.
+2019-12-24 06:24:23 INFO  LoggingFilter:29 - Session[02016CBC8ED22C406461CDAA7BDAA627] trying to accept page [/login]. Allowed.
+2019-12-24 06:24:23 INFO  LoginServlet:65 - User ok@ok.ok login successfully
+2019-12-24 06:24:25 INFO  LoggingFilter:29 - Session[02016CBC8ED22C406461CDAA7BDAA627] trying to accept page [/delete_account.jsp]. Allowed.
+2019-12-24 06:24:30 INFO  LoggingFilter:29 - Session[02016CBC8ED22C406461CDAA7BDAA627] trying to accept page [/delete_account]. Allowed.
+2019-12-24 06:24:56 INFO  LoggingFilter:29 - Session[6D18ECF0344569E58291FA50A789E6C8] trying to accept page [/index.jsp]. Allowed.
+2019-12-24 06:24:57 INFO  LoggingFilter:29 - Session[6D18ECF0344569E58291FA50A789E6C8] trying to accept page [/login.jsp]. Allowed.
+2019-12-24 06:25:02 INFO  LoggingFilter:29 - Session[6D18ECF0344569E58291FA50A789E6C8] trying to accept page [/login]. Allowed.
+2019-12-24 06:25:03 INFO  LoginServlet:65 - User ok@ok.ok login successfully
+2019-12-24 06:25:04 INFO  LoggingFilter:29 - Session[6D18ECF0344569E58291FA50A789E6C8] trying to accept page [/delete_account.jsp]. Allowed.
+2019-12-24 06:25:06 INFO  LoggingFilter:29 - Session[6D18ECF0344569E58291FA50A789E6C8] trying to accept page [/delete_account]. Allowed.
+2019-12-24 06:25:16 INFO  LoggingFilter:29 - Session[6D18ECF0344569E58291FA50A789E6C8] trying to accept page [/delete_account]. Allowed.
+2019-12-24 06:26:18 INFO  LoggingFilter:29 - Session[C86375AD510596952F5D834CD22930F6] trying to accept page [/index.jsp]. Allowed.
+2019-12-24 06:26:24 INFO  LoggingFilter:29 - Session[C86375AD510596952F5D834CD22930F6] trying to accept page [/login.jsp]. Allowed.

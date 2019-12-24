@@ -63,4 +63,12 @@ public class UserService {
         }
 
     }
+
+    public void deleteUserByEmail(String email) {
+        try {
+            userDao.deleteByEmail(email);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }

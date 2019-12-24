@@ -37,6 +37,12 @@ public class JDBCAmountTransactionDao implements AmountTransactionDao {
             DATABASE_NAME,
             TABLE_NAME
     );
+    private static final String QUERY_DELETE_BY_USER_EMAIL = String.format(
+            "DELETE FROM %s.%s WHERE USER_EMAIL=?",
+            DATABASE_NAME,
+            TABLE_NAME
+    );
+
 
     private Connection connection;
 
@@ -123,6 +129,15 @@ public class JDBCAmountTransactionDao implements AmountTransactionDao {
         preparedStatement.setString(5, entity.getHandledBy());
         preparedStatement.setString(6, DateFormator.formatByDefaultFormator(entity.getHandledTime()));
         preparedStatement.setInt(7, entity.getId());
+
+        preparedStatement.executeUpdate();
+    }
+
+    @Override
+    public void deleteByUserEmail(String userEmail) throws SQLException {
+        PreparedStatement preparedStatement = connection.prepareStatement(QUERY_DELETE_BY_USER_EMAIL);
+
+        preparedStatement.setString(1, userEmail);
 
         preparedStatement.executeUpdate();
     }

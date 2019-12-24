@@ -38,6 +38,11 @@ public class JDBSUserDao implements UserDao {
             DATABASE_NAME,
             TABLE_NAME
     );
+    private static final String QUERY_DELETE_BY_EMAIL = String.format(
+            "DELETE FROM %s.%s WHERE EMAIL=?",
+            DATABASE_NAME,
+            TABLE_NAME
+    );
 
     private Connection connection;
 
@@ -120,6 +125,15 @@ public class JDBSUserDao implements UserDao {
         preparedStatement.setString(9, entity.getPhoneNumber());
         preparedStatement.setFloat(10, entity.getAmount());
         preparedStatement.setString(11, entity.getEmail());
+
+        preparedStatement.executeUpdate();
+    }
+
+    @Override
+    public void deleteByEmail(String email) throws SQLException {
+        PreparedStatement preparedStatement = connection.prepareStatement(QUERY_DELETE_BY_EMAIL);
+
+        preparedStatement.setString(1, email);
 
         preparedStatement.executeUpdate();
     }
