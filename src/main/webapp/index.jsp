@@ -56,9 +56,8 @@
         <h2 class="text-center text-medium">
           Amount<br>Scheme
         </h2>
-        <p class="col-md-6 col-md-offset-3 text-center scheme-text">There
-          is a variety of saving plans which can be tailored to your needs,
-          including: Tax Exempt Savings Regular Savings.</p>
+        <p class="col-md-6 col-md-offset-3 text-center scheme-text">You can easy add some money to your pocket.
+        Just enter needed amount value and our manager prove it. </p>
         <div class="scheme-button col-md-4 col-md-offset-4">
           <a type="button" class="btn btn-default btn-lg" href="add_amount.jsp"
              style="border-radius: 24px;">Learn more..</a>
@@ -66,26 +65,25 @@
       </div>
       <div class="col-md-4 scheme-type-2">
         <h2 class="text-center text-medium">
-          Deposit<br>Scheme
+          Transaction<br>History
         </h2>
-        <p class="col-md-6 col-md-offset-3 text-center scheme-text">There
-          is a variety of saving plans which can be tailored to your needs,
-          including: Tax Exempt Savings Regular Savings.</p>
+        <p class="col-md-6 col-md-offset-3 text-center scheme-text">You can see all your transactions and their status.</p>
         <div class="scheme-button col-md-4 col-md-offset-4">
           <a type="button" class="btn btn-default btn-lg"
-             href="deposit_scheme.jsp" style="border-radius: 24px;">Learn
+             href="amount_history.jsp" style="border-radius: 24px;">Learn
             more..</a>
         </div>
       </div>
       <div class="col-md-4 scheme-type-3">
         <h2 class="text-center text-medium">
-          Payment<br>Bill
+          Deposit<br>Bill
         </h2>
         <p class="col-md-6 col-md-offset-3 text-center scheme-text">There
           is a variety of saving plans which can be tailored to your needs,
           including: Tax Exempt Savings Regular Savings.</p>
         <div class="scheme-button col-md-4 col-md-offset-4">
           <a type="button" class="btn btn-default btn-lg"
+             href="deposit_scheme.jsp"
              style="border-radius: 24px;">Learn more..</a>
         </div>
       </div>
